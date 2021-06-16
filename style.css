@@ -101,6 +101,7 @@ footer {
 }
 
 .main-container {
+	margin: auto;
     position: relative;
     padding: 50px;
     opacity: 1;
