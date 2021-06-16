@@ -101,7 +101,7 @@ footer {
 }
 
 .main-container {
-	margin: auto;
+    margin: auto;
     position: relative;
     padding: 50px;
     opacity: 1;
@@ -128,7 +128,7 @@ footer {
 
 #sobre {
     margin: auto;
-    width: 760px;
+    max-width: 760px;
 }
 
 #contato {
