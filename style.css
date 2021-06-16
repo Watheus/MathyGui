@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*:focus {
+    outline: none;
+}
+
+body {
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    background: rgb(234, 234, 234);
+}
+
+.navbar .container {
+    background-color: rgb(39, 39, 39);
+    margin: auto;
+    padding: 0 15px;
+    max-width: 960px;
+    line-height: 48px;
+    border-radius: 0 0 14px 14px;
+    box-shadow: 0 2px 10px 2px rgb(0, 0, 0);
+    color: rgb(207, 207, 207);
+}
+
+.navbar .colunas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.navbar .menu {
+    width: 35%;
+}
+
+.navbar .logo {
+    width: 30%;
+    text-align: center;
+    font-size: 21px;
+}
+
+.navbar .sociais {
+    width: 35%;
+}
+
+.navbar .sociais li {
+    float: right;
+    width: 40px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    align-items: center;
+}
+
+.navbar .menu li {
+    float: left;
+    margin: 0 12px;
+    font-size: 13px;
+}
+
+.navbar li a {
+    display: block;
+    text-align: center;
+    color: rgb(207, 207, 207);
+    text-decoration: none;
+    transition-timing-function: ease;
+    transition: all .4s;
+}
+
+.navbar li a:hover {
+    color: rgb(255, 197, 91);
+}
+
+.navbar li a:hover:not(.ativo) {
+    color: rgb(255, 197, 91);
+}
+
+.navbar li a.ativo {
+    color: rgb(170, 131, 4);
+}
+
+.sociais li a.facebook:hover{
+    color: rgb(66, 103, 178);
+}
+
+.sociais li a.instagram:hover{
+    color: rgb(185, 48, 167);
+}
+
+.sociais li a.twitter:hover{
+    color: rgb(29, 161, 242);
+}
+
+.sociais li a.pinterest:hover{
+    color: rgb(230, 0, 35);
+}
+
+footer {
+    background-color: rgb(39, 39, 39);
+}
+
+.main-container {
+    position: relative;
+    padding: 50px;
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+	animation-duration: .5s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+        top: -100px;
+	}
+	100% {
+		opacity: 1;
+        top: 0;
+	}
+}
+
+#produtos {
+    margin: auto;
+}
+
+#sobre {
+    margin: auto;
+    width: 760px;
+}
+
+#contato {
+    margin: auto;
+    width: 400px;
+}
+
+.center {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.center p {
+    font-size: 12.6px;
+}
+
+hr {
+    width: 140px;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgba(0, 0, 0, 0), black, rgba(0, 0, 0, 0)) 1;
+    border-width: 0 0 1px;
+}
+
+.main-container p {
+    margin: 10px 0 5px;
+}
+
+#contato p.submit {
+    margin: 18px 0 13px;
+}
+
+#formulario-contato {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#formulario-contato p.left, p.right {
+    max-width: 48.5%;
+}
+
+#formulario-contato p.left {
+    float: left;
+}
+
+#formulario-contato p.right {
+    float: right;
+}
+
+input, select, textarea {
+    background: rgb(218, 218, 218);
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    min-height: 38px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+input[type=submit] {
+    width: 30%;
+    cursor: pointer;
+    background: rgb(255, 197, 91);
+    box-shadow: inset 0 -2px 4px rgba(0, 0, 0, 0.308);
+    transition-timing-function: ease;
+    transition: all .6s;
+}
+
+input[type=submit]:hover {
+    background: rgb(194, 135, 27);
+    box-shadow: inset 0 -2px 4px rgba(0, 0, 0, 0.308);
+}
+
+textarea {
+    resize: none;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label.error, textarea.error {
+    color: rgb(255, 90, 90);
+    font-size: 13px;
+    display: block;
+    margin-top: 5px;
+}
+
+input.error, textarea.error {
+    border: 1px dashed rgb(255, 90, 90);
+    font-weight: 300;
+    color: rgb(255, 90, 90);
+}
