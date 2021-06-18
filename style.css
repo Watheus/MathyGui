@@ -15,6 +15,13 @@ h3, span {
     margin: 19px 0;
 }
 
+img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    border-radius: 50%;
+}
+
 .w290 {
     width: 290px;
 }
@@ -270,8 +277,13 @@ hr {
     border-width: 0 0 1px;
 }
 
+.main-container h3 {
+    margin: 36px 0 0;
+}
+
 .main-container p {
     margin: 10px 0 5px;
+    text-align: justify;
 }
 
 #contato p.submit {
