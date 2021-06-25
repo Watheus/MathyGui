@@ -95,7 +95,7 @@ img {
     color: rgb(214, 214, 214);
     text-decoration: none;
     transition-timing-function: ease;
-    transition: all .4s;
+    transition: all .3s;
 }
 
 .navbar li a:hover {
